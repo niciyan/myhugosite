@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/myprofile/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/about/myprofile/</loc>
     <lastmod>2017-12-20T21:54:03+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/second/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/posts/second/</loc>
     <lastmod>2017-12-20T21:21:35+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/my-first-post/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/posts/my-first-post/</loc>
     <lastmod>2017-12-20T20:42:30+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/about/</loc>
     <lastmod>2017-12-20T21:54:03+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/posts/</loc>
     <lastmod>2017-12-20T21:21:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://angry-sammet-71c8fb.netlify.com/</loc>
     <lastmod>2017-12-20T21:54:03+09:00</lastmod>
     <priority>0</priority>
   </url>
