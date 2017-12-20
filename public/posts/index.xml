@@ -2,34 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ok</title>
-    <link>https://angry-sammet-71c8fb.netlify.com/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on ok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Dec 2017 21:21:35 +0900</lastBuildDate>
     
-	<atom:link href="https://angry-sammet-71c8fb.netlify.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Second</title>
-      <link>https://angry-sammet-71c8fb.netlify.com/posts/second/</link>
+      <link>/posts/second/</link>
       <pubDate>Wed, 20 Dec 2017 21:21:35 +0900</pubDate>
       
-      <guid>https://angry-sammet-71c8fb.netlify.com/posts/second/</guid>
+      <guid>/posts/second/</guid>
       <description>Today, I will show you some my old story. It&amp;rsquo;s a boring and keeping you sleppy.</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://angry-sammet-71c8fb.netlify.com/posts/my-first-post/</link>
+      <link>/posts/my-first-post/</link>
       <pubDate>Wed, 20 Dec 2017 20:42:30 +0900</pubDate>
       
-      <guid>https://angry-sammet-71c8fb.netlify.com/posts/my-first-post/</guid>
-      <description> My Title nice one.
-It&amp;rsquo;s a next sentense.
-Sample shell script.
-# radom bash ls -al  </description>
+      <guid>/posts/my-first-post/</guid>
+      <description>My Title nice one.
+It&amp;rsquo;s a next sentense.</description>
     </item>
     
   </channel>

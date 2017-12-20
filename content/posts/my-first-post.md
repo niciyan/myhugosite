@@ -8,7 +8,3 @@ draft: false
 
 nice one.  
 It's a next sentense.  
-Sample shell script.  
-
-    # radom
-    bash ls -al
