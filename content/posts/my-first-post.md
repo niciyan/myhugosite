@@ -8,3 +8,7 @@ draft: false
 
 nice one.  
 It's a next sentense.  
+
+    # code snip
+    bash ls -al
+
