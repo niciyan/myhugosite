@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://angry-sammet-71c8fb.netlify.com/posts/job-shell/</loc>
+    <lastmod>2017-12-21T17:34:36+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://angry-sammet-71c8fb.netlify.com/posts/git_submodule/</loc>
     <lastmod>2017-12-21T17:21:43+09:00</lastmod>
   </url>
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://angry-sammet-71c8fb.netlify.com/posts/</loc>
-    <lastmod>2017-12-21T17:21:43+09:00</lastmod>
+    <lastmod>2017-12-21T17:34:36+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,7 +51,7 @@
   
   <url>
     <loc>https://angry-sammet-71c8fb.netlify.com/</loc>
-    <lastmod>2017-12-21T17:21:43+09:00</lastmod>
+    <lastmod>2017-12-21T17:34:36+09:00</lastmod>
     <priority>0</priority>
   </url>
   
