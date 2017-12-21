@@ -39,6 +39,12 @@
   </url>
   
   <url>
+    <loc>https://angry-sammet-71c8fb.netlify.com/</loc>
+    <lastmod>2017-12-21T17:34:36+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://angry-sammet-71c8fb.netlify.com/posts/</loc>
     <lastmod>2017-12-21T17:34:36+09:00</lastmod>
     <priority>0</priority>
@@ -46,12 +52,6 @@
   
   <url>
     <loc>https://angry-sammet-71c8fb.netlify.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://angry-sammet-71c8fb.netlify.com/</loc>
-    <lastmod>2017-12-21T17:34:36+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -40,9 +40,3 @@ my shell snippets.
     zabbix_get -s $AGENTIP -k system.cpu.util[,,avg5]
     zabbix_get -s $AGENTIP -k vm.memory.size[pavailable]
 
-    # MEMO ##############################
-    #
-    # server-sns AWS profile 
-    # IAM username : member
-    #
-    # MEMO ##############################
