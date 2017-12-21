@@ -6,10 +6,20 @@
     <description>Recent content on ok</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Dec 2017 21:54:03 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 21 Dec 2017 17:21:43 +0900</lastBuildDate>
     
 	<atom:link href="https://angry-sammet-71c8fb.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git_submodule</title>
+      <link>https://angry-sammet-71c8fb.netlify.com/posts/git_submodule/</link>
+      <pubDate>Thu, 21 Dec 2017 17:21:43 +0900</pubDate>
+      
+      <guid>https://angry-sammet-71c8fb.netlify.com/posts/git_submodule/</guid>
+      <description>Git submodule clone command.
+git submodule update -i  </description>
+    </item>
     
     <item>
       <title>Myprofile</title>
