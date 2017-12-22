@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abouts on Nishiyama&#39;s Dock</title>
-    <link>https://nishiyamasu.xyz/about/</link>
-    <description>Recent content in Abouts on Nishiyama&#39;s Dock</description>
+    <title>Abouts on West Mountain Dock</title>
+    <link>https://angry-sammet-71c8fb.netlify.com/about/</link>
+    <description>Recent content in Abouts on West Mountain Dock</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Nishiyama</copyright>
     <lastBuildDate>Wed, 20 Dec 2017 21:54:03 +0900</lastBuildDate>
     
-	<atom:link href="https://nishiyamasu.xyz/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://angry-sammet-71c8fb.netlify.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Myprofile</title>
-      <link>https://nishiyamasu.xyz/about/myprofile/</link>
+      <link>https://angry-sammet-71c8fb.netlify.com/about/myprofile/</link>
       <pubDate>Wed, 20 Dec 2017 21:54:03 +0900</pubDate>
       
-      <guid>https://nishiyamasu.xyz/about/myprofile/</guid>
+      <guid>https://angry-sammet-71c8fb.netlify.com/about/myprofile/</guid>
       <description>I am West Mountain. Call me Nishi.</description>
     </item>
     

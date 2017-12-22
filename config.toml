@@ -1,7 +1,31 @@
-baseURL = "https://nishiyamasu.xyz/"
-languageCode = "ja"
-title = "Nishiyama's Dock"
+baseURL = "https://angry-sammet-71c8fb.netlify.com/"
+languageCode = "en-us"
+title = "West Mountain Dock"
 theme = "hugo_theme_pickles"
+copyright = "&copy; 2017 Nishiyama"
 
 [params]
+  author = "Nishiyama Takahiro"
+  github = "niciyan"
+  bio = "I love Vim and Golang"
+  # Short subtitle/tagline. This is displayed in the header.
+  subtitle = "My reminder note"
   favicon = "favicon.ico"
+
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about/myprofile"
+    weight = 2
+
+[[menu.main]]
+    name = "Posts"
+    url = "/posts"
+    weight = 3
+
+
