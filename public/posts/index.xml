@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on West Mountain Dock</title>
-    <link>https://angry-sammet-71c8fb.netlify.com/posts/</link>
+    <link>https://nishiyamasu.xyz/posts/</link>
     <description>Recent content in Posts on West Mountain Dock</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
     <lastBuildDate>Thu, 21 Dec 2017 17:34:36 +0900</lastBuildDate>
     
-	<atom:link href="https://angry-sammet-71c8fb.netlify.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Job Shell</title>
-      <link>https://angry-sammet-71c8fb.netlify.com/posts/job-shell/</link>
+      <link>https://nishiyamasu.xyz/posts/job-shell/</link>
       <pubDate>Thu, 21 Dec 2017 17:34:36 +0900</pubDate>
       
-      <guid>https://angry-sammet-71c8fb.netlify.com/posts/job-shell/</guid>
+      <guid>https://nishiyamasu.xyz/posts/job-shell/</guid>
       <description>my shell snippets.
 # view other login user w # view own teletypewriter tty # view host&#39;s working time uptime # view listening port ( TCP, UDP, unix socket respectively ) netstat -tnl netstat -unl netstat -xnl ########################### # Apache Log grep ########################### # limit by date (calendar) grep &amp;quot;08/Dec/2007&amp;quot; # limit by hour (example: 22 o&#39;clock) grep &amp;quot;08/Dec/2007:22:&amp;quot; # get DNS server cat /etc/resolv.conf ( grep &amp;quot;nameserver&amp;quot; ) # view services systemctl list-unit-files -t service | grep &amp;quot;enabled&amp;quot; # ZABBIX zabbix_get -s $AGENTIP -k system.</description>
     </item>
     
     <item>
       <title>Git_submodule</title>
-      <link>https://angry-sammet-71c8fb.netlify.com/posts/git_submodule/</link>
+      <link>https://nishiyamasu.xyz/posts/git_submodule/</link>
       <pubDate>Thu, 21 Dec 2017 17:21:43 +0900</pubDate>
       
-      <guid>https://angry-sammet-71c8fb.netlify.com/posts/git_submodule/</guid>
+      <guid>https://nishiyamasu.xyz/posts/git_submodule/</guid>
       <description>Git submodule clone command.
 git submodule update -i  </description>
     </item>
     
     <item>
       <title>Second</title>
-      <link>https://angry-sammet-71c8fb.netlify.com/posts/second/</link>
+      <link>https://nishiyamasu.xyz/posts/second/</link>
       <pubDate>Wed, 20 Dec 2017 21:21:35 +0900</pubDate>
       
-      <guid>https://angry-sammet-71c8fb.netlify.com/posts/second/</guid>
+      <guid>https://nishiyamasu.xyz/posts/second/</guid>
       <description>Today, I will show you some my old story. It&amp;rsquo;s a boring and keeping you sleppy. good .
 Golang Snippet.
  package main import ( &amp;quot;encoding/json&amp;quot; &amp;quot;fmt&amp;quot; &amp;quot;github.com/jinzhu/gorm&amp;quot; _ &amp;quot;github.com/jinzhu/gorm/dialects/mysql&amp;quot; ) type Product struct { gorm.Model Code string Price uint } type User struct { gorm.Model Emails []Email Name string } type Email struct { gorm.Model Email string UserID uint } func main() { db, err := gorm.Open(&amp;quot;mysql&amp;quot;, &amp;quot;root@/rem?charset=utf8&amp;amp;parseTime=True&amp;amp;loc=Local&amp;quot;) if err !</description>
@@ -45,10 +45,10 @@ Golang Snippet.
     
     <item>
       <title>My First Post</title>
-      <link>https://angry-sammet-71c8fb.netlify.com/posts/my-first-post/</link>
+      <link>https://nishiyamasu.xyz/posts/my-first-post/</link>
       <pubDate>Wed, 20 Dec 2017 20:42:30 +0900</pubDate>
       
-      <guid>https://angry-sammet-71c8fb.netlify.com/posts/my-first-post/</guid>
+      <guid>https://nishiyamasu.xyz/posts/my-first-post/</guid>
       <description>nice one.
 italic
  It&amp;rsquo;s a next sentense.
