@@ -2,3 +2,6 @@ baseURL = "https://nishiyamasu.xyz/"
 languageCode = "ja"
 title = "Nishiyama's Dock"
 theme = "hugo_theme_pickles"
+
+[params]
+  favicon = "favicon.ico"
