@@ -11,6 +11,7 @@ copyright = "&copy; 2017 Nishiyama"
   # Short subtitle/tagline. This is displayed in the header.
   subtitle = "My reminder note"
   favicon = "favicon.ico"
+  avatar = "https://www.gravatar.com/avatar/25ea16438c18944f134e383fe1d05ef6"
 
 
 [[menu.main]]
