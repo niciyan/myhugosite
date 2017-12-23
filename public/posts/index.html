@@ -28,7 +28,7 @@
   <meta property="og:type" content="website" />
   
   
-  <meta name="generator" content="Hugo 0.32-DEV" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.31.1" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://nishiyamasu.xyz/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://nishiyamasu.xyz/favicon.ico" />
   <script type="text/javascript" src="https://nishiyamasu.xyz/js/bundle.js"></script>
@@ -52,6 +52,27 @@
   <main id="main" class="l-main">
 
 <h2 class="c-title p-tag-title">Posts</h2>
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/unlimit-mysql-con/">MYSQLのIP制限を解除したい</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2017-12-23T20:00:01&#43;09:00">
+        Dec 23, 2017
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    MYSQLのbind-address制限を解除する。
+bind-addressの行をコメントアウトする。
+$ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf ) --途中は省略-- # bind-address 127.0.0.1  
+  </div>
+  
+</article>
+
+
 
 
 <article class="c-article p-list-article">

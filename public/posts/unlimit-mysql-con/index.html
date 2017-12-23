@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Git_submodule</title>
-  <meta property="og:title" content="Git_submodule" />
-  <meta name="twitter:title" content="Git_submodule" />
+  <title>MYSQLのIP制限を解除したい</title>
+  <meta property="og:title" content="MYSQLのIP制限を解除したい" />
+  <meta name="twitter:title" content="MYSQLのIP制限を解除したい" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="Nishiyama Takahiro"/>
   <meta property="og:site_name" content="West Mountain Dock" />
-  <meta property="og:url" content="https://nishiyamasu.xyz/posts/git_submodule/" />
+  <meta property="og:url" content="https://nishiyamasu.xyz/posts/unlimit-mysql-con/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -55,12 +55,12 @@
 
 <article class="p-article">
   <header>
-    <h1>Git_submodule</h1>
+    <h1>MYSQLのIP制限を解除したい</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2017-12-21T17:21:43&#43;09:00">
-          Dec 21, 2017
+        <time datetime="2017-12-23T20:00:01&#43;09:00">
+          Dec 23, 2017
         </time>
       </div>
       
@@ -68,9 +68,12 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>Git submodule clone command.</p>
+    <p>MYSQLのbind-address制限を解除する。<br />
+bind-addressの行をコメントアウトする。</p>
 
-<pre><code>git submodule update -i
+<pre><code>$ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf )
+--途中は省略--
+# bind-address 127.0.0.1
 </code></pre>
 
   </section>
@@ -80,12 +83,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://nishiyamasu.xyz/posts/job-shell/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://nishiyamasu.xyz/about/myprofile/">Older</a>
+          <a href="https://nishiyamasu.xyz/posts/job-shell/">Older</a>
           
         </div>
       </div>
