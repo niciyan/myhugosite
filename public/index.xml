@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Sat, 23 Dec 2017 20:00:01 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Dec 2017 16:05:37 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MYSQLの操作あれこれ</title>
+      <link>https://nishiyamasu.xyz/posts/querys-sql/</link>
+      <pubDate>Sun, 24 Dec 2017 16:05:37 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/querys-sql/</guid>
+      <description> 権限設定 mysql&amp;gt; flush privileges on &amp;lt;schema&amp;gt;.* to &#39;&amp;lt;user&amp;gt;&#39;@&#39;&amp;lt;host&amp;gt;&#39;;  権限を見る mysql&amp;gt; show grants;  データベースのステータスを見る。 mysql&amp;gt; status;  DDLを見る。 mysql&amp;gt; show create table &amp;lt;tablename&amp;gt;; mysql&amp;gt; show create user &amp;lt;tablename&amp;gt;;  sample eer </description>
+    </item>
     
     <item>
       <title>MYSQLのIP制限を解除したい</title>
@@ -30,7 +39,7 @@ $ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf ) --途�
       
       <guid>https://nishiyamasu.xyz/posts/job-shell/</guid>
       <description>my shell snippets.
-# view other login user w # view own teletypewriter tty # view host&#39;s working time uptime # view listening port ( TCP, UDP, unix socket respectively ) netstat -tnl netstat -unl netstat -xnl ########################### # Apache Log grep ########################### # limit by date (calendar) grep &amp;quot;08/Dec/2007&amp;quot; # limit by hour (example: 22 o&#39;clock) grep &amp;quot;08/Dec/2007:22:&amp;quot; # get DNS server cat /etc/resolv.conf ( grep &amp;quot;nameserver&amp;quot; ) # view services systemctl list-unit-files -t service | grep &amp;quot;enabled&amp;quot; # ZABBIX zabbix_get -s $AGENTIP -k system.</description>
+# view other login user $ w # view own teletypewriter $ tty # view host&#39;s working time $ uptime # view listening port ( TCP, UDP, unix socket respectively ) $ netstat -tnl $ netstat -unl $ netstat -xnl ########################### # Apache Log grep ########################### # limit by date (calendar) $ grep &amp;quot;08/Dec/2007&amp;quot; # limit by hour (example: 22 o&#39;clock) $ grep &amp;quot;08/Dec/2007:22:&amp;quot; # get DNS server $ cat /etc/resolv.</description>
     </item>
     
     <item>

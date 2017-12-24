@@ -29,7 +29,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.31.1" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.32-DEV" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://nishiyamasu.xyz/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://nishiyamasu.xyz/favicon.ico" />
   <script type="text/javascript" src="https://nishiyamasu.xyz/js/bundle.js"></script>
@@ -71,38 +71,38 @@
     <p>my shell snippets.</p>
 
 <pre><code># view other login user
-w
+$ w
 
 # view own teletypewriter
-tty
+$ tty
 
 # view host's working time
-uptime
+$ uptime
 
 # view listening port ( TCP, UDP, unix socket  respectively )
-netstat -tnl
-netstat -unl
-netstat -xnl
+$ netstat -tnl
+$ netstat -unl
+$ netstat -xnl
 
 ###########################
 #   Apache Log grep
 ###########################
 # limit by date (calendar)
-grep &quot;08/Dec/2007&quot;
+$ grep &quot;08/Dec/2007&quot;
 
 # limit by hour (example: 22 o'clock)
-grep &quot;08/Dec/2007:22:&quot;
+$ grep &quot;08/Dec/2007:22:&quot;
 
 
 # get DNS server
-cat /etc/resolv.conf ( grep &quot;nameserver&quot; )
+$ cat /etc/resolv.conf ( grep &quot;nameserver&quot; )
 
 # view services
-systemctl list-unit-files -t service | grep &quot;enabled&quot;
+$ systemctl list-unit-files -t service | grep &quot;enabled&quot;
 
 # ZABBIX
-zabbix_get -s $AGENTIP -k system.cpu.util[,,avg5]
-zabbix_get -s $AGENTIP -k vm.memory.size[pavailable]
+$ zabbix_get -s $AGENTIP -k system.cpu.util[,,avg5]
+$ zabbix_get -s $AGENTIP -k vm.memory.size[pavailable]
 </code></pre>
 
   </section>

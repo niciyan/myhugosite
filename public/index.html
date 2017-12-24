@@ -28,7 +28,7 @@
   <meta property="og:type" content="website" />
   
   
-  <meta name="generator" content="Hugo 0.31.1" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.32-DEV" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://nishiyamasu.xyz/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://nishiyamasu.xyz/favicon.ico" />
   <link href="https://nishiyamasu.xyz/index.xml" rel="alternate" type="application/rss+xml" title="West Mountain Dock" />
@@ -52,6 +52,25 @@
     
   </header>
   <main id="main" class="l-main">
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/querys-sql/">MYSQLの操作あれこれ</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2017-12-24T16:05:37&#43;09:00">
+        Dec 24, 2017
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+     権限設定 mysql&gt; flush privileges on &lt;schema&gt;.* to '&lt;user&gt;'@'&lt;host&gt;';  権限を見る mysql&gt; show grants;  データベースのステータスを見る。 mysql&gt; status;  DDLを見る。 mysql&gt; show create table &lt;tablename&gt;; mysql&gt; show create user &lt;tablename&gt;;  sample eer 
+  </div>
+  
+</article>
+
 
 
 
@@ -88,7 +107,7 @@ $ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf ) --途�
   </header>
   <div class="c-article__summary">
     my shell snippets.
-# view other login user w # view own teletypewriter tty # view host's working time uptime # view listening port ( TCP, UDP, unix socket respectively ) netstat -tnl netstat -unl netstat -xnl ########################### # Apache Log grep ########################### # limit by date (calendar) grep &quot;08/Dec/2007&quot; # limit by hour (example: 22 o'clock) grep &quot;08/Dec/2007:22:&quot; # get DNS server cat /etc/resolv.conf ( grep &quot;nameserver&quot; ) # view services systemctl list-unit-files -t service | grep &quot;enabled&quot; # ZABBIX zabbix_get -s $AGENTIP -k system.
+# view other login user $ w # view own teletypewriter $ tty # view host's working time $ uptime # view listening port ( TCP, UDP, unix socket respectively ) $ netstat -tnl $ netstat -unl $ netstat -xnl ########################### # Apache Log grep ########################### # limit by date (calendar) $ grep &quot;08/Dec/2007&quot; # limit by hour (example: 22 o'clock) $ grep &quot;08/Dec/2007:22:&quot; # get DNS server $ cat /etc/resolv.
   </div>
   
   <a href="https://nishiyamasu.xyz/posts/job-shell/" class="c-article__btn p-list-article__btn">Read more</a></li>
