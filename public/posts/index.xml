@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Sun, 24 Dec 2017 16:05:37 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Dec 2017 15:44:28 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>今週のメモ　2017-12-27</title>
+      <link>https://nishiyamasu.xyz/posts/aws-cli/</link>
+      <pubDate>Wed, 27 Dec 2017 15:44:28 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/aws-cli/</guid>
+      <description> AWS cli で処理を待つ（コマンド） 次のようなコマンドで待つことができる。
+# create vpc command with specifying ipv4 cidr # output format : json $ aws ec2 create-vpc --cidr-block 10.0.0.0/16 # view wait help doc $ aws ec2 wait help # wait until vpc is ready $ aws ec2 wait vpc-available --vpc-ids  Linuxでユーザをsudo権限のグループに入れる usermod -aG sudo &amp;lt;username&amp;gt; ( Ubuntu ) usermod -aG wheel &amp;lt;username&amp;gt; ( CentOS )  dateコマンドで「YYYYMMDD」形式で表示する date &amp;quot;+%Y%m%d&amp;quot;  </description>
+    </item>
     
     <item>
       <title>MYSQLの操作あれこれ</title>

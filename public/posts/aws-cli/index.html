@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Git_submodule</title>
-  <meta property="og:title" content="Git_submodule" />
-  <meta name="twitter:title" content="Git_submodule" />
+  <title>今週のメモ　2017-12-27</title>
+  <meta property="og:title" content="今週のメモ　2017-12-27" />
+  <meta name="twitter:title" content="今週のメモ　2017-12-27" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="Nishiyama Takahiro"/>
   <meta property="og:site_name" content="West Mountain Dock" />
-  <meta property="og:url" content="https://nishiyamasu.xyz/posts/git_submodule/" />
+  <meta property="og:url" content="https://nishiyamasu.xyz/posts/aws-cli/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -55,12 +55,12 @@
 
 <article class="p-article">
   <header>
-    <h1>Git_submodule</h1>
+    <h1>今週のメモ　2017-12-27</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2017-12-21T17:21:43&#43;09:00">
-          Dec 21, 2017
+        <time datetime="2017-12-27T15:44:28&#43;09:00">
+          Dec 27, 2017
         </time>
       </div>
       
@@ -68,9 +68,32 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>Git submodule clone command.</p>
+    
 
-<pre><code>git submodule update -i
+<h3 id="aws-cli-で処理を待つ-コマンド">AWS cli で処理を待つ（コマンド）</h3>
+
+<p>次のようなコマンドで待つことができる。</p>
+
+<pre><code># create vpc command with specifying ipv4 cidr
+# output format : json
+$ aws ec2 create-vpc --cidr-block 10.0.0.0/16
+
+# view wait help doc
+$ aws ec2 wait help
+
+# wait until vpc is ready 
+$ aws ec2 wait vpc-available --vpc-ids
+</code></pre>
+
+<h3 id="linuxでユーザをsudo権限のグループに入れる">Linuxでユーザをsudo権限のグループに入れる</h3>
+
+<pre><code>usermod -aG sudo &lt;username&gt;  ( Ubuntu )
+usermod -aG wheel &lt;username&gt;  ( CentOS )
+</code></pre>
+
+<h3 id="dateコマンドで-yyyymmdd-形式で表示する">dateコマンドで「YYYYMMDD」形式で表示する</h3>
+
+<pre><code>date &quot;+%Y%m%d&quot;
 </code></pre>
 
   </section>
@@ -80,12 +103,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://nishiyamasu.xyz/posts/job-shell/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://nishiyamasu.xyz/about/myprofile/">Older</a>
+          <a href="https://nishiyamasu.xyz/posts/querys-sql/">Older</a>
           
         </div>
       </div>
