@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Wed, 27 Dec 2017 15:44:28 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Dec 2017 16:03:32 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gcloud コマンドのメモ</title>
+      <link>https://nishiyamasu.xyz/posts/gcloud-commands/</link>
+      <pubDate>Wed, 27 Dec 2017 16:03:32 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/gcloud-commands/</guid>
+      <description> gcloud のアップデートや、インストール $ gcloud components update $ gcloud components install app-engine-go  App Engine デプロイ時にバージョンを指定する
+$ gcloud app deploy --version &amp;lt;version-name&amp;gt; ↓例: devのバージョン名でデプロイする。 $ gcloud app deploy --version dev  </description>
+    </item>
     
     <item>
       <title>今週のメモ　2017-12-27</title>
