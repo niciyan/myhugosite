@@ -57,6 +57,45 @@
 
 <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/graphviz-rem/">Graphvizのサンプル1</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2017-12-29T10:45:50&#43;09:00">
+        Dec 29, 2017
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+     コード digraph { graph [ rankdir = LR; ] Ins1 -&gt; Ins2; Ins2 -&gt; Ins1; }  出来上がった図 グラフに与えた設定  rankdir : LR  
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/python-logging/">PythonのLoggingについて</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2017-12-29T10:28:32&#43;09:00">
+        Dec 29, 2017
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+     必ず、以下のような作法にする。
+from logging import getLogger, StreamHandler, DEBUG, Formatter myformat = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s') logger = getLogger(&quot;Sample&quot;) handler = StreamHandler() handler.setLevel(DEBUG) handler.setFormatter(myformat) logger.setLevel(DEBUG) logger.addHandler(handler) # logger.propagate = False logger.debug('hello') try: logger.info(&quot;Program started.&quot;) for i in range(3): print(&quot;count {}&quot;.format(i)) raise Exception except Exception as e: logger.error(&quot;We got error while excuting program. {}&quot;.format(e))  主要ロギングハンドラ  StreamHandler FileHandler  フォーマッタの種類  %(asctime)s %(name)s %(levelname)s %(message)s  
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/gcloud-commands/">gcloud コマンドのメモ</a></h2>
     <p class="c-article__meta">
       Posted on

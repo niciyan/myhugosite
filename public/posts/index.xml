@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Wed, 27 Dec 2017 16:03:32 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2017 10:45:50 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Graphvizのサンプル1</title>
+      <link>https://nishiyamasu.xyz/posts/graphviz-rem/</link>
+      <pubDate>Fri, 29 Dec 2017 10:45:50 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/graphviz-rem/</guid>
+      <description> コード digraph { graph [ rankdir = LR; ] Ins1 -&amp;gt; Ins2; Ins2 -&amp;gt; Ins1; }  出来上がった図 グラフに与えた設定  rankdir : LR  </description>
+    </item>
+    
+    <item>
+      <title>PythonのLoggingについて</title>
+      <link>https://nishiyamasu.xyz/posts/python-logging/</link>
+      <pubDate>Fri, 29 Dec 2017 10:28:32 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/python-logging/</guid>
+      <description> 必ず、以下のような作法にする。
+from logging import getLogger, StreamHandler, DEBUG, Formatter myformat = Formatter(&#39;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#39;) logger = getLogger(&amp;quot;Sample&amp;quot;) handler = StreamHandler() handler.setLevel(DEBUG) handler.setFormatter(myformat) logger.setLevel(DEBUG) logger.addHandler(handler) # logger.propagate = False logger.debug(&#39;hello&#39;) try: logger.info(&amp;quot;Program started.&amp;quot;) for i in range(3): print(&amp;quot;count {}&amp;quot;.format(i)) raise Exception except Exception as e: logger.error(&amp;quot;We got error while excuting program. {}&amp;quot;.format(e))  主要ロギングハンドラ  StreamHandler FileHandler  フォーマッタの種類  %(asctime)s %(name)s %(levelname)s %(message)s  </description>
+    </item>
     
     <item>
       <title>gcloud コマンドのメモ</title>
