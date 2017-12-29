@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphviz on West Mountain Dock</title>
+    <link>https://nishiyamasu.xyz/tags/graphviz/</link>
+    <description>Recent content in Graphviz on West Mountain Dock</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Nishiyama</copyright>
+    <lastBuildDate>Fri, 29 Dec 2017 18:08:43 +0900</lastBuildDate>
+    
+	<atom:link href="https://nishiyamasu.xyz/tags/graphviz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Graphvizサンプル2</title>
+      <link>https://nishiyamasu.xyz/posts/graphviz-2/</link>
+      <pubDate>Fri, 29 Dec 2017 18:08:43 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/graphviz-2/</guid>
+      <description> コード digraph graph_name { graph [ ranksep = 2; ] root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child2 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child3 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child4 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child5 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child6 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child7 [ color = &amp;quot;blue&amp;quot; ]; }  出来上がった図 コード digraph graph_name { graph [ ranksep = 2; ] root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root_child -&amp;gt; Child1 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child2 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child3 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child4 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child5 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child6 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child7 [ color = &amp;quot;blue&amp;quot; ]; }  出来上がった図 </description>
+    </item>
+    
+    <item>
+      <title>Graphvizのサンプル1</title>
+      <link>https://nishiyamasu.xyz/posts/graphviz-rem/</link>
+      <pubDate>Fri, 29 Dec 2017 10:45:50 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/graphviz-rem/</guid>
+      <description> コード digraph { graph [ rankdir = LR; ] Ins1 -&amp;gt; Ins2; Ins2 -&amp;gt; Ins1; }  出来上がった図 グラフに与えた設定  rankdir : LR  </description>
+    </item>
+    
+  </channel>
+</rss>

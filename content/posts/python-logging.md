@@ -2,6 +2,7 @@
 title: "PythonのLoggingについて"
 date: 2017-12-29T10:28:32+09:00
 draft: false
+tags: [ "python" ]
 ---
 
 必ず、以下のような作法にする。

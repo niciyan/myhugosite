@@ -7,9 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
+    <lastBuildDate>Fri, 29 Dec 2017 18:08:43 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Graphviz</title>
+      <link>https://nishiyamasu.xyz/tags/graphviz/</link>
+      <pubDate>Fri, 29 Dec 2017 18:08:43 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/tags/graphviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://nishiyamasu.xyz/tags/mysql/</link>
+      <pubDate>Sun, 24 Dec 2017 16:05:37 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://nishiyamasu.xyz/tags/python/</link>
+      <pubDate>Fri, 29 Dec 2017 10:28:32 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/tags/python/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

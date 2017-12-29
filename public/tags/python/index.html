@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Abouts</title>
-  <meta property="og:title" content="Abouts" />
-  <meta name="twitter:title" content="Abouts" />
+  <title>Python</title>
+  <meta property="og:title" content="Python" />
+  <meta name="twitter:title" content="Python" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="Nishiyama Takahiro"/>
   <meta property="og:site_name" content="West Mountain Dock" />
-  <meta property="og:url" content="https://nishiyamasu.xyz/about/" />
+  <meta property="og:url" content="https://nishiyamasu.xyz/tags/python/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -51,7 +51,26 @@
   </header>
   <main id="main" class="l-main">
 
-<h2 class="c-title p-tag-title">Abouts</h2>
+<h2 class="c-title p-tag-title">Python</h2>
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/python-logging/">PythonのLoggingについて</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2017-12-29T10:28:32&#43;09:00">
+        Dec 29, 2017
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+     必ず、以下のような作法にする。
+from logging import getLogger, StreamHandler, DEBUG, Formatter myformat = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s') logger = getLogger(&quot;Sample&quot;) handler = StreamHandler() handler.setLevel(DEBUG) handler.setFormatter(myformat) logger.setLevel(DEBUG) logger.addHandler(handler) # logger.propagate = False logger.debug('hello') try: logger.info(&quot;Program started.&quot;) for i in range(3): print(&quot;count {}&quot;.format(i)) raise Exception except Exception as e: logger.error(&quot;We got error while excuting program. {}&quot;.format(e))  主要ロギングハンドラ  StreamHandler FileHandler  フォーマッタの種類  %(asctime)s %(name)s %(levelname)s %(message)s  
+  </div>
+  
+</article>
+
 
 <nav class="c-pagination p-pagination">
   <div class="c-pagination__ctrl">
@@ -62,7 +81,7 @@
       
     </div>
   </div>
-  <span class="c-pagination__count p-pagination__count">Page 1 of 0</span>
+  <span class="c-pagination__count p-pagination__count">Page 1 of 1</span>
 </nav>
 
 

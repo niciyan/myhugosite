@@ -2,6 +2,7 @@
 title: "MYSQLの操作あれこれ"
 date: 2017-12-24T16:05:37+09:00
 draft: false
+tags: [ "mysql" ]
 ---
 
 ### 権限設定

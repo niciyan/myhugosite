@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql on West Mountain Dock</title>
+    <link>https://nishiyamasu.xyz/tags/mysql/</link>
+    <description>Recent content in Mysql on West Mountain Dock</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Nishiyama</copyright>
+    <lastBuildDate>Sun, 24 Dec 2017 16:05:37 +0900</lastBuildDate>
+    
+	<atom:link href="https://nishiyamasu.xyz/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MYSQLの操作あれこれ</title>
+      <link>https://nishiyamasu.xyz/posts/querys-sql/</link>
+      <pubDate>Sun, 24 Dec 2017 16:05:37 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/querys-sql/</guid>
+      <description> 権限設定 mysql&amp;gt; flush privileges on &amp;lt;schema&amp;gt;.* to &#39;&amp;lt;user&amp;gt;&#39;@&#39;&amp;lt;host&amp;gt;&#39;;  権限を見る mysql&amp;gt; show grants;  データベースのステータスを見る。 mysql&amp;gt; status;  DDLを見る。 mysql&amp;gt; show create table &amp;lt;tablename&amp;gt;; mysql&amp;gt; show create user &amp;lt;tablename&amp;gt;;  sample eer </description>
+    </item>
+    
+    <item>
+      <title>MYSQLのIP制限を解除したい</title>
+      <link>https://nishiyamasu.xyz/posts/unlimit-mysql-con/</link>
+      <pubDate>Sat, 23 Dec 2017 20:00:01 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/unlimit-mysql-con/</guid>
+      <description>MYSQLのbind-address制限を解除する。
+bind-addressの行をコメントアウトする。
+$ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf ) --途中は省略-- # bind-address 127.0.0.1  </description>
+    </item>
+    
+  </channel>
+</rss>

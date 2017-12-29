@@ -2,6 +2,7 @@
 title: "Graphvizのサンプル1"
 date: 2017-12-29T10:45:50+09:00
 draft: false
+tags: [ "graphviz" ]
 ---
 
 ## コード

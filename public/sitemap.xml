@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nishiyamasu.xyz/posts/graphviz-2/</loc>
+    <lastmod>2017-12-29T18:08:43+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nishiyamasu.xyz/posts/graphviz-rem/</loc>
     <lastmod>2017-12-29T10:45:50+09:00</lastmod>
   </url>
@@ -69,19 +74,38 @@
   </url>
   
   <url>
+    <loc>https://nishiyamasu.xyz/tags/graphviz/</loc>
+    <lastmod>2017-12-29T18:08:43+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nishiyamasu.xyz/tags/mysql/</loc>
+    <lastmod>2017-12-24T16:05:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nishiyamasu.xyz/posts/</loc>
-    <lastmod>2017-12-29T10:45:50+09:00</lastmod>
+    <lastmod>2017-12-29T18:08:43+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nishiyamasu.xyz/tags/python/</loc>
+    <lastmod>2017-12-29T10:28:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nishiyamasu.xyz/tags/</loc>
+    <lastmod>2017-12-29T18:08:43+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nishiyamasu.xyz/</loc>
-    <lastmod>2017-12-29T10:45:50+09:00</lastmod>
+    <lastmod>2017-12-29T18:08:43+09:00</lastmod>
     <priority>0</priority>
   </url>
   

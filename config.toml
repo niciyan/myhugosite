@@ -29,4 +29,8 @@ copyright = "&copy; 2017 Nishiyama"
     url = "/posts"
     weight = 3
 
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
 
