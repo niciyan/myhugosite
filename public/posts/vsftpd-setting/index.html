@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Graphvizサンプル2</title>
-  <meta property="og:title" content="Graphvizサンプル2" />
-  <meta name="twitter:title" content="Graphvizサンプル2" />
+  <title>vsftpdの設定メモ</title>
+  <meta property="og:title" content="vsftpdの設定メモ" />
+  <meta name="twitter:title" content="vsftpdの設定メモ" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="Nishiyama Takahiro"/>
   <meta property="og:site_name" content="West Mountain Dock" />
-  <meta property="og:url" content="https://nishiyamasu.xyz/posts/graphviz-2/" />
+  <meta property="og:url" content="https://nishiyamasu.xyz/posts/vsftpd-setting/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -55,16 +55,14 @@
 
 <article class="p-article">
   <header>
-    <h1>Graphvizサンプル2</h1>
+    <h1>vsftpdの設定メモ</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2017-12-29T18:08:43&#43;09:00">
-          Dec 29, 2017
+        <time datetime="2017-12-31T01:43:13&#43;09:00">
+          Dec 31, 2017
         </time>
       </div>
-      
-      <a href="https://nishiyamasu.xyz/tags/graphviz" class="c-tag">graphviz</a>
       
     </div>
   </header>
@@ -72,57 +70,31 @@
   <section id="js-article" class="p-article__body">
     
 
-<h2 id="コード">コード</h2>
+<h2 id="前置き">前置き</h2>
 
-<pre><code>digraph graph_name {
+<p>vsftpdによる設定で最初にしておいた方がいいもの。<br />
+インストールした後の段階。<br />
+chrootの設定は、また別の記事で。</p>
 
-  graph [ ranksep = 2; ]
+<dl>
+    <dt>OS</dt>
+    <dd>Ubuntu16.04LTS</dd>
+</dl>
 
-  root -&gt; Child1 [ color = &quot;red&quot; ];
-  root -&gt; Child1 [ color = &quot;red&quot; ];
-  root -&gt; Child1 [ color = &quot;red&quot; ];
-  root -&gt; Child1 [ color = &quot;red&quot; ];
+<h2 id="手順">手順</h2>
 
-  root -&gt; Child1 [ color = &quot;blue&quot; ];
-  root -&gt; Child2 [ color = &quot;blue&quot; ];
-  root -&gt; Child3 [ color = &quot;blue&quot; ];
-  root -&gt; Child4 [ color = &quot;blue&quot; ];
-  root -&gt; Child5 [ color = &quot;blue&quot; ];
-  root -&gt; Child6 [ color = &quot;blue&quot; ];
-  root -&gt; Child7 [ color = &quot;blue&quot; ];
-}
+<p>/etc/vsftpd.confのファイルを編集する。</p>
+
+<pre><code># コメント外す
+write_enable=YES
+
+# コメント外す
+chroot_local_user=YES
+
+# 行追加
+pasv_min_port=40000
+pasv_max_port=50000
 </code></pre>
-
-<h2 id="出来上がった図">出来上がった図</h2>
-
-<img src="/images/graphviz/multi.png" alt="Graphvizサンプル2 /images/graphviz/multi.png" data-action="zoom">
-
-
-<h2 id="コード-1">コード</h2>
-
-<pre><code>digraph graph_name {
-
-  graph [ ranksep = 2; ]
-
-  root -&gt; root_child [ color = &quot;red&quot; ];
-  root -&gt; root_child [ color = &quot;red&quot; ];
-  root -&gt; root_child [ color = &quot;red&quot; ];
-  root -&gt; root_child [ color = &quot;red&quot; ];
-
-  root_child -&gt; Child1 [ color = &quot;blue&quot; ];
-  root_child -&gt; Child2 [ color = &quot;blue&quot; ];
-  root_child -&gt; Child3 [ color = &quot;blue&quot; ];
-  root_child -&gt; Child4 [ color = &quot;blue&quot; ];
-  root_child -&gt; Child5 [ color = &quot;blue&quot; ];
-  root_child -&gt; Child6 [ color = &quot;blue&quot; ];
-  root_child -&gt; Child7 [ color = &quot;blue&quot; ];
-}
-</code></pre>
-
-<h2 id="出来上がった図-1">出来上がった図</h2>
-
-<img src="/images/graphviz/multi2.png" alt="Graphvizサンプル2 /images/graphviz/multi2.png" data-action="zoom">
-
 
   </section>
   <footer>
@@ -131,31 +103,16 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://nishiyamasu.xyz/posts/vsftpd-setting/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://nishiyamasu.xyz/posts/graphviz-rem/">Older</a>
+          <a href="https://nishiyamasu.xyz/posts/graphviz-2/">Older</a>
           
         </div>
       </div>
     </nav>
     
-
-<section class="p-related">
-  <h3>See Also</h3>
-  <ul id="slider" class="p-related__list">
-    
-    <li class="p-related__item js-related__item">
-      <a href="/posts/graphviz-rem/"
-        >
-        <span>Graphvizのサンプル1</span>
-      </a>
-    </li>
-    
-  </ul>
-</section>
 
 
     

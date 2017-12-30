@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Fri, 29 Dec 2017 18:08:43 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Dec 2017 01:43:13 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vsftpdの設定メモ</title>
+      <link>https://nishiyamasu.xyz/posts/vsftpd-setting/</link>
+      <pubDate>Sun, 31 Dec 2017 01:43:13 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/vsftpd-setting/</guid>
+      <description> 前置き vsftpdによる設定で最初にしておいた方がいいもの。
+インストールした後の段階。
+chrootの設定は、また別の記事で。
+ OS Ubuntu16.04LTS  手順 /etc/vsftpd.confのファイルを編集する。
+# コメント外す write_enable=YES # コメント外す chroot_local_user=YES # 行追加 pasv_min_port=40000 pasv_max_port=50000  </description>
+    </item>
     
     <item>
       <title>Graphvizサンプル2</title>
