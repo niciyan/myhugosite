@@ -7,29 +7,31 @@ tags: [ "python" ]
 
 必ず、以下のような作法にする。
 
-    from logging import getLogger, StreamHandler, DEBUG, Formatter
+{{< highlight python "linenos=table" >}}
+from logging import getLogger, StreamHandler, DEBUG, Formatter
 
-    myformat = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+myformat = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-    logger = getLogger("Sample")
-    handler = StreamHandler()
-    handler.setLevel(DEBUG)
-    handler.setFormatter(myformat)
-    logger.setLevel(DEBUG)
-    logger.addHandler(handler)
-    # logger.propagate = False
+logger = getLogger("Sample")
+handler = StreamHandler()
+handler.setLevel(DEBUG)
+handler.setFormatter(myformat)
+logger.setLevel(DEBUG)
+logger.addHandler(handler)
+# logger.propagate = False
 
-    logger.debug('hello')
+logger.debug('hello')
 
 
 
-    try:
-        logger.info("Program started.")
-        for i in range(3):
-            print("count {}".format(i))
-        raise Exception
-    except Exception as e:
-        logger.error("We got error while excuting program. {}".format(e))
+try:
+    logger.info("Program started.")
+    for i in range(3):
+        print("count {}".format(i))
+    raise Exception
+except Exception as e:
+    logger.error("We got error while excuting program. {}".format(e))
+{{< / highlight >}}
 
 ## 主要ロギングハンドラ
 

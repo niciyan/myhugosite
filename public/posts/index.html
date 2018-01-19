@@ -174,7 +174,7 @@ chrootの設定は、また別の記事で。
   </header>
   <div class="c-article__summary">
      必ず、以下のような作法にする。
-from logging import getLogger, StreamHandler, DEBUG, Formatter myformat = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s') logger = getLogger(&quot;Sample&quot;) handler = StreamHandler() handler.setLevel(DEBUG) handler.setFormatter(myformat) logger.setLevel(DEBUG) logger.addHandler(handler) # logger.propagate = False logger.debug('hello') try: logger.info(&quot;Program started.&quot;) for i in range(3): print(&quot;count {}&quot;.format(i)) raise Exception except Exception as e: logger.error(&quot;We got error while excuting program. {}&quot;.format(e))  主要ロギングハンドラ  StreamHandler FileHandler  フォーマッタの種類  %(asctime)s %(name)s %(levelname)s %(message)s  
+1234567891011121314151617181920212223 from logging import getLogger, StreamHandler, DEBUG, Formatter myformat = Formatter(&#39;%(asctime)s- %(name)s- %(levelname)s- %(message)s&#39;) logger = getLogger(&#34;Sample&#34;) handler = StreamHandler() handler.setLevel(DEBUG) handler.setFormatter(myformat) logger.setLevel(DEBUG) logger.addHandler(handler) # logger.propagate = False logger.debug(&#39;hello&#39;) try: logger.info(&#34;Program started.&#34;) for i in range(3): print(&#34;count {}&#34;.format(i)) raise Exception except Exception as e: logger.error(&#34;We got error while excuting program. {}&#34;.format(e))   主要ロギングハンドラ  StreamHandler FileHandler  フォーマッタの種類  %(asctime)s %(name)s %(levelname)s %(message)s  
   </div>
   
 </article>

@@ -74,30 +74,35 @@
 
 <p>必ず、以下のような作法にする。</p>
 
-<pre><code>from logging import getLogger, StreamHandler, DEBUG, Formatter
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">23</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> logging <span style="color:#f92672">import</span> getLogger, StreamHandler, DEBUG, Formatter
 
-myformat = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+myformat <span style="color:#f92672">=</span> Formatter(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
 
-logger = getLogger(&quot;Sample&quot;)
-handler = StreamHandler()
-handler.setLevel(DEBUG)
-handler.setFormatter(myformat)
-logger.setLevel(DEBUG)
-logger.addHandler(handler)
-# logger.propagate = False
+logger <span style="color:#f92672">=</span> getLogger(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;Sample&#34;</span>)
+handler <span style="color:#f92672">=</span> StreamHandler()
+handler<span style="color:#f92672">.</span>setLevel(DEBUG)
+handler<span style="color:#f92672">.</span>setFormatter(myformat)
+logger<span style="color:#f92672">.</span>setLevel(DEBUG)
+logger<span style="color:#f92672">.</span>addHandler(handler)
+<span style="color:#75715e"># logger.propagate = False</span>
 
-logger.debug('hello')
+logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;hello&#39;</span>)
 
 
 
-try:
-    logger.info(&quot;Program started.&quot;)
-    for i in range(3):
-        print(&quot;count {}&quot;.format(i))
-    raise Exception
-except Exception as e:
-    logger.error(&quot;We got error while excuting program. {}&quot;.format(e))
-</code></pre>
+<span style="color:#66d9ef">try</span>:
+    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;Program started.&#34;</span>)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;count {}&#34;</span><span style="color:#f92672">.</span>format(i))
+    <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;We got error while excuting program. {}&#34;</span><span style="color:#f92672">.</span>format(e))</code></pre></td></tr></table>
+</div>
+</div>
 
 <h2 id="主要ロギングハンドラ">主要ロギングハンドラ</h2>
 
