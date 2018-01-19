@@ -28,7 +28,7 @@
   <meta property="og:type" content="website" />
   
   
-  <meta name="generator" content="Hugo 0.32-DEV" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.31.1" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://nishiyamasu.xyz/css/style.css" />
   <link rel='icon' type='image/x-icon' href="https://nishiyamasu.xyz/favicon.ico" />
   <link href="https://nishiyamasu.xyz/index.xml" rel="alternate" type="application/rss+xml" title="West Mountain Dock" />
@@ -57,6 +57,53 @@
 
 <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/runlevel/">Linuxでランレベルを見る</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2018-01-19T11:50:56&#43;09:00">
+        Jan 19, 2018
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Linuxで現在のランレベルを見るためのコマンド 代表例。 $ runlevel もうひとつ。 $ who -r おまけ # chkconfig (各ランレベルでのサービス利用可能状況を見る) ランレベルとは 次から引用。 http://www.linfo.org/runlevel_def.html
+ 0 - System halt; no activity, the system can be safely powered down.
+1 - Single user; rarely used.
+2 - Multiple users, no NFS (network filesystem); also used rarely.
+3 - Multiple users, command line (i.e., all-text mode) interface; the standard runlevel for most Linux-based server hardware.
+4 - User-definable
+5 - Multiple users, GUI (graphical user interface); the standard runlevel for most Linux-based desktop systems.
+  </div>
+  
+  <a href="https://nishiyamasu.xyz/posts/runlevel/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/linux-userpass/">Linuxでユーザを作成し、パスワードを変更する。</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2018-01-11T10:56:49&#43;09:00">
+        Jan 11, 2018
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Create new user and Change password for the user.
+adduser &lt;username&gt; echo &lt;username&gt; | passwd &lt;password&gt; --stdin 
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/vsftpd-setting/">vsftpdの設定メモ</a></h2>
     <p class="c-article__meta">
       Posted on
@@ -70,7 +117,7 @@
 インストールした後の段階。
 chrootの設定は、また別の記事で。
  OS Ubuntu16.04LTS  手順 /etc/vsftpd.confのファイルを編集する。
-# コメント外す write_enable=YES # コメント外す chroot_local_user=YES # 行追加 pasv_min_port=40000 pasv_max_port=50000  
+# コメント外す write_enable=YES # コメント外す chroot_local_user=YES # 行追加 pasv_min_port=40000 pasv_max_port=50000 
   </div>
   
 </article>
@@ -209,48 +256,6 @@ $ gcloud app deploy --version &lt;version-name&gt; ↓例: devのバージョン
     MYSQLのbind-address制限を解除する。
 bind-addressの行をコメントアウトする。
 $ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf ) --途中は省略-- # bind-address 127.0.0.1  
-  </div>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/job-shell/">Job Shell</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-12-21T17:34:36&#43;09:00">
-        Dec 21, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    my shell snippets.
-# view other login user $ w # view own teletypewriter $ tty # view host's working time $ uptime # view listening port ( TCP, UDP, unix socket respectively ) $ netstat -tnl $ netstat -unl $ netstat -xnl ########################### # Apache Log grep ########################### # limit by date (calendar) $ grep &quot;08/Dec/2007&quot; # limit by hour (example: 22 o'clock) $ grep &quot;08/Dec/2007:22:&quot; # get DNS server $ cat /etc/resolv.
-  </div>
-  
-  <a href="https://nishiyamasu.xyz/posts/job-shell/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/git_submodule/">Git_submodule</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-12-21T17:21:43&#43;09:00">
-        Dec 21, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Git submodule clone command.
-git submodule update -i  
   </div>
   
 </article>

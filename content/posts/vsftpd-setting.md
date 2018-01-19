@@ -17,13 +17,15 @@ chrootの設定は、また別の記事で。
 ## 手順
 /etc/vsftpd.confのファイルを編集する。
 
-    # コメント外す
-    write_enable=YES
-    
-    # コメント外す
-    chroot_local_user=YES
-    
-    # 行追加
-    pasv_min_port=40000
-    pasv_max_port=50000
+{{< highlight "linenos=table" >}}
+# コメント外す
+write_enable=YES
+
+# コメント外す
+chroot_local_user=YES
+
+# 行追加
+pasv_min_port=40000
+pasv_max_port=50000
+{{< / highlight >}}
 

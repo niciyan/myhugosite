@@ -7,10 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Sun, 31 Dec 2017 01:43:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jan 2018 11:50:56 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linuxでランレベルを見る</title>
+      <link>https://nishiyamasu.xyz/posts/runlevel/</link>
+      <pubDate>Fri, 19 Jan 2018 11:50:56 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/runlevel/</guid>
+      <description>Linuxで現在のランレベルを見るためのコマンド 代表例。 $ runlevel もうひとつ。 $ who -r おまけ # chkconfig (各ランレベルでのサービス利用可能状況を見る) ランレベルとは 次から引用。 http://www.linfo.org/runlevel_def.html
+ 0 - System halt; no activity, the system can be safely powered down.
+1 - Single user; rarely used.
+2 - Multiple users, no NFS (network filesystem); also used rarely.
+3 - Multiple users, command line (i.e., all-text mode) interface; the standard runlevel for most Linux-based server hardware.
+4 - User-definable
+5 - Multiple users, GUI (graphical user interface); the standard runlevel for most Linux-based desktop systems.</description>
+    </item>
+    
+    <item>
+      <title>Linuxでユーザを作成し、パスワードを変更する。</title>
+      <link>https://nishiyamasu.xyz/posts/linux-userpass/</link>
+      <pubDate>Thu, 11 Jan 2018 10:56:49 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/linux-userpass/</guid>
+      <description>Create new user and Change password for the user.
+adduser &amp;lt;username&amp;gt; echo &amp;lt;username&amp;gt; | passwd &amp;lt;password&amp;gt; --stdin </description>
+    </item>
     
     <item>
       <title>vsftpdの設定メモ</title>
@@ -22,7 +47,7 @@
 インストールした後の段階。
 chrootの設定は、また別の記事で。
  OS Ubuntu16.04LTS  手順 /etc/vsftpd.confのファイルを編集する。
-# コメント外す write_enable=YES # コメント外す chroot_local_user=YES # 行追加 pasv_min_port=40000 pasv_max_port=50000  </description>
+# コメント外す write_enable=YES # コメント外す chroot_local_user=YES # 行追加 pasv_min_port=40000 pasv_max_port=50000 </description>
     </item>
     
     <item>
