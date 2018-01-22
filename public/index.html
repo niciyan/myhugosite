@@ -57,6 +57,29 @@
 
 <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/boto-craedential/">[AWS boto] botoでAWSのcreadentialを指定する</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2018-01-22T13:42:29&#43;09:00">
+        Jan 22, 2018
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    AWSのPython　SDKであるbotoのメモ。
+botoはデフォルトでaws　configureによって設定される情報を使用して認証を行う。
+今回紹介する方法は、その認証情報を利用せずに、自分でAccess　KeyとSecret　Keyを指定する。
+クライアント作成時の、パラメータを以下のように、指定する。
+1234567 import boto3 # 本来は、認証情報のハードコードは、やってはいけません。 client = boto3.client(&#39;ec2&#39;, aws_access_key_id=&#39;&lt;Your Access Key&gt;&#39;, aws_secret_access_key=&#39;&lt;Your Secret Key&gt;&#39; )   
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/runlevel/">Linuxでランレベルを見る</a></h2>
     <p class="c-article__meta">
       Posted on
@@ -136,7 +159,7 @@ chrootの設定は、また別の記事で。
     </p>
   </header>
   <div class="c-article__summary">
-     コード digraph graph_name { graph [ ranksep = 2; ] root -&gt; Child1 [ color = &quot;red&quot; ]; root -&gt; Child1 [ color = &quot;red&quot; ]; root -&gt; Child1 [ color = &quot;red&quot; ]; root -&gt; Child1 [ color = &quot;red&quot; ]; root -&gt; Child1 [ color = &quot;blue&quot; ]; root -&gt; Child2 [ color = &quot;blue&quot; ]; root -&gt; Child3 [ color = &quot;blue&quot; ]; root -&gt; Child4 [ color = &quot;blue&quot; ]; root -&gt; Child5 [ color = &quot;blue&quot; ]; root -&gt; Child6 [ color = &quot;blue&quot; ]; root -&gt; Child7 [ color = &quot;blue&quot; ]; }  出来上がった図 コード digraph graph_name { graph [ ranksep = 2; ] root -&gt; root_child [ color = &quot;red&quot; ]; root -&gt; root_child [ color = &quot;red&quot; ]; root -&gt; root_child [ color = &quot;red&quot; ]; root -&gt; root_child [ color = &quot;red&quot; ]; root_child -&gt; Child1 [ color = &quot;blue&quot; ]; root_child -&gt; Child2 [ color = &quot;blue&quot; ]; root_child -&gt; Child3 [ color = &quot;blue&quot; ]; root_child -&gt; Child4 [ color = &quot;blue&quot; ]; root_child -&gt; Child5 [ color = &quot;blue&quot; ]; root_child -&gt; Child6 [ color = &quot;blue&quot; ]; root_child -&gt; Child7 [ color = &quot;blue&quot; ]; }  出来上がった図 
+     コード digraph graph_name { graph [ ranksep = 2; ] root -&gt; Child1 [ color = &#34;red&#34; ]; root -&gt; Child1 [ color = &#34;red&#34; ]; root -&gt; Child1 [ color = &#34;red&#34; ]; root -&gt; Child1 [ color = &#34;red&#34; ]; root -&gt; Child1 [ color = &#34;blue&#34; ]; root -&gt; Child2 [ color = &#34;blue&#34; ]; root -&gt; Child3 [ color = &#34;blue&#34; ]; root -&gt; Child4 [ color = &#34;blue&#34; ]; root -&gt; Child5 [ color = &#34;blue&#34; ]; root -&gt; Child6 [ color = &#34;blue&#34; ]; root -&gt; Child7 [ color = &#34;blue&#34; ]; } 出来上がった図 コード digraph graph_name { graph [ ranksep = 2; ] root -&gt; root_child [ color = &#34;red&#34; ]; root -&gt; root_child [ color = &#34;red&#34; ]; root -&gt; root_child [ color = &#34;red&#34; ]; root -&gt; root_child [ color = &#34;red&#34; ]; root_child -&gt; Child1 [ color = &#34;blue&#34; ]; root_child -&gt; Child2 [ color = &#34;blue&#34; ]; root_child -&gt; Child3 [ color = &#34;blue&#34; ]; root_child -&gt; Child4 [ color = &#34;blue&#34; ]; root_child -&gt; Child5 [ color = &#34;blue&#34; ]; root_child -&gt; Child6 [ color = &#34;blue&#34; ]; root_child -&gt; Child7 [ color = &#34;blue&#34; ]; } 出来上がった図 
   </div>
   
 </article>
@@ -235,27 +258,6 @@ $ gcloud app deploy --version &lt;version-name&gt; ↓例: devのバージョン
   </header>
   <div class="c-article__summary">
      権限設定 mysql&gt; flush privileges on &lt;schema&gt;.* to '&lt;user&gt;'@'&lt;host&gt;';  権限を見る mysql&gt; show grants;  データベースのステータスを見る。 mysql&gt; status;  DDLを見る。 mysql&gt; show create table &lt;tablename&gt;; mysql&gt; show create user &lt;tablename&gt;;  sample eer 
-  </div>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/unlimit-mysql-con/">MYSQLのIP制限を解除したい</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-12-23T20:00:01&#43;09:00">
-        Dec 23, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    MYSQLのbind-address制限を解除する。
-bind-addressの行をコメントアウトする。
-$ sudo vim /etc/mysql/mysql.conf.d/mysqld.conf ( /etc/mysql/mysql.conf ) --途中は省略-- # bind-address 127.0.0.1  
   </div>
   
 </article>

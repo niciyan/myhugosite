@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Fri, 19 Jan 2018 11:50:56 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jan 2018 13:42:29 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[AWS boto] botoでAWSのcreadentialを指定する</title>
+      <link>https://nishiyamasu.xyz/posts/boto-craedential/</link>
+      <pubDate>Mon, 22 Jan 2018 13:42:29 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/boto-craedential/</guid>
+      <description>AWSのPython　SDKであるbotoのメモ。
+botoはデフォルトでaws　configureによって設定される情報を使用して認証を行う。
+今回紹介する方法は、その認証情報を利用せずに、自分でAccess　KeyとSecret　Keyを指定する。
+クライアント作成時の、パラメータを以下のように、指定する。
+1234567 import boto3 # 本来は、認証情報のハードコードは、やってはいけません。 client = boto3.client(&amp;#39;ec2&amp;#39;, aws_access_key_id=&amp;#39;&amp;lt;Your Access Key&amp;gt;&amp;#39;, aws_secret_access_key=&amp;#39;&amp;lt;Your Secret Key&amp;gt;&amp;#39; )   </description>
+    </item>
     
     <item>
       <title>Linuxでランレベルを見る</title>
@@ -56,7 +69,7 @@ chrootの設定は、また別の記事で。
       <pubDate>Fri, 29 Dec 2017 18:08:43 +0900</pubDate>
       
       <guid>https://nishiyamasu.xyz/posts/graphviz-2/</guid>
-      <description> コード digraph graph_name { graph [ ranksep = 2; ] root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; Child1 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child2 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child3 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child4 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child5 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child6 [ color = &amp;quot;blue&amp;quot; ]; root -&amp;gt; Child7 [ color = &amp;quot;blue&amp;quot; ]; }  出来上がった図 コード digraph graph_name { graph [ ranksep = 2; ] root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root -&amp;gt; root_child [ color = &amp;quot;red&amp;quot; ]; root_child -&amp;gt; Child1 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child2 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child3 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child4 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child5 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child6 [ color = &amp;quot;blue&amp;quot; ]; root_child -&amp;gt; Child7 [ color = &amp;quot;blue&amp;quot; ]; }  出来上がった図 </description>
+      <description> コード digraph graph_name { graph [ ranksep = 2; ] root -&amp;gt; Child1 [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; Child1 [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; Child1 [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; Child1 [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; Child1 [ color = &amp;#34;blue&amp;#34; ]; root -&amp;gt; Child2 [ color = &amp;#34;blue&amp;#34; ]; root -&amp;gt; Child3 [ color = &amp;#34;blue&amp;#34; ]; root -&amp;gt; Child4 [ color = &amp;#34;blue&amp;#34; ]; root -&amp;gt; Child5 [ color = &amp;#34;blue&amp;#34; ]; root -&amp;gt; Child6 [ color = &amp;#34;blue&amp;#34; ]; root -&amp;gt; Child7 [ color = &amp;#34;blue&amp;#34; ]; } 出来上がった図 コード digraph graph_name { graph [ ranksep = 2; ] root -&amp;gt; root_child [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; root_child [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; root_child [ color = &amp;#34;red&amp;#34; ]; root -&amp;gt; root_child [ color = &amp;#34;red&amp;#34; ]; root_child -&amp;gt; Child1 [ color = &amp;#34;blue&amp;#34; ]; root_child -&amp;gt; Child2 [ color = &amp;#34;blue&amp;#34; ]; root_child -&amp;gt; Child3 [ color = &amp;#34;blue&amp;#34; ]; root_child -&amp;gt; Child4 [ color = &amp;#34;blue&amp;#34; ]; root_child -&amp;gt; Child5 [ color = &amp;#34;blue&amp;#34; ]; root_child -&amp;gt; Child6 [ color = &amp;#34;blue&amp;#34; ]; root_child -&amp;gt; Child7 [ color = &amp;#34;blue&amp;#34; ]; } 出来上がった図 </description>
     </item>
     
     <item>
