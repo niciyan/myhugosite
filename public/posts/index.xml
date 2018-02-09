@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Mon, 22 Jan 2018 13:42:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 09 Feb 2018 15:55:30 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vimをビルドする時のconfigureオプション</title>
+      <link>https://nishiyamasu.xyz/posts/build-vim/</link>
+      <pubDate>Fri, 09 Feb 2018 15:55:30 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/build-vim/</guid>
+      <description>$ cd vim/src/ $ ./configure \ --with-features=huge \ --enable-fail-if-missing \ --enable-perlinterp \ --enable-pythoninterp \ --enable-python3interp \ --enable-rubyinterp \ --enable-luainterp  オプションについて補足 luaはプラグインの依存関係で必須となる。
+pythonとpython3は、個人的にスクリプトを書くことがあるので、入れている。
+perlとrubyはおまけ。</description>
+    </item>
     
     <item>
       <title>[AWS boto] botoでAWSのcreadentialを指定する</title>
