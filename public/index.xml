@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nishiyama</copyright>
-    <lastBuildDate>Fri, 09 Feb 2018 15:55:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 14 Feb 2018 16:24:11 +0900</lastBuildDate>
     
 	<atom:link href="https://nishiyamasu.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LsyncdとRsyndにより、サーバ間でファイルを同期する。</title>
+      <link>https://nishiyamasu.xyz/posts/lsyncd-rsynd/</link>
+      <pubDate>Wed, 14 Feb 2018 16:24:11 +0900</pubDate>
+      
+      <guid>https://nishiyamasu.xyz/posts/lsyncd-rsynd/</guid>
+      <description>概要 ２つのサーバ間でファイルの同期を図る。 lsyncdとrsyncdを使用する。
+手順  同期元をマスター、同期先をスレーブとする。 マスターにlsyncdを導入し、ファイル変更を検知する。 変更があれば、スレーブのrsyncdとやりとりをして、ファイルを同期する。   マスターに変更があるたびに、同期をする仕掛けとなっている。
+ 設定ファイル マスター 123456789101112131415161718192021222324252627 -- # vim /etc/lsyncd.conf settings { logfile = &amp;#34;/var/log/lsyncd/lsyncd.log&amp;#34;, pidfile = &amp;#34;/var/run/lsyncd.pid&amp;#34;, statusFile = &amp;#34;/var/log/lsyncd/lsyncd.stat&amp;#34;, nodaemon = false, maxProcesses = 3, insist = 1, statusInterval = 1 } sync { default.rsync, source = &amp;#34;/home/ec2-user/sync_src&amp;#34;, target = &amp;#34;ip-172-30-2-36.ap-northeast-1.compute.internal::hoge&amp;#34;, delay = 5, delete = true, rsync = { archive = true, password_file = &amp;#34;/etc/rsync.passwd&amp;#34;, compress = false } } -- # vim /etc/rsync.</description>
+    </item>
     
     <item>
       <title>Vimをビルドする時のconfigureオプション</title>

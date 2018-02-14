@@ -56,6 +56,29 @@
 
 <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/lsyncd-rsynd/">LsyncdとRsyndにより、サーバ間でファイルを同期する。</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2018-02-14T16:24:11&#43;09:00">
+        Feb 14, 2018
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    概要 ２つのサーバ間でファイルの同期を図る。 lsyncdとrsyncdを使用する。
+手順  同期元をマスター、同期先をスレーブとする。 マスターにlsyncdを導入し、ファイル変更を検知する。 変更があれば、スレーブのrsyncdとやりとりをして、ファイルを同期する。   マスターに変更があるたびに、同期をする仕掛けとなっている。
+ 設定ファイル マスター 123456789101112131415161718192021222324252627 -- # vim /etc/lsyncd.conf settings { logfile = &#34;/var/log/lsyncd/lsyncd.log&#34;, pidfile = &#34;/var/run/lsyncd.pid&#34;, statusFile = &#34;/var/log/lsyncd/lsyncd.stat&#34;, nodaemon = false, maxProcesses = 3, insist = 1, statusInterval = 1 } sync { default.rsync, source = &#34;/home/ec2-user/sync_src&#34;, target = &#34;ip-172-30-2-36.ap-northeast-1.compute.internal::hoge&#34;, delay = 5, delete = true, rsync = { archive = true, password_file = &#34;/etc/rsync.passwd&#34;, compress = false } } -- # vim /etc/rsync.
+  </div>
+  
+  <a href="https://nishiyamasu.xyz/posts/lsyncd-rsynd/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/build-vim/">Vimをビルドする時のconfigureオプション</a></h2>
     <p class="c-article__meta">
       Posted on
@@ -239,26 +262,6 @@ chrootの設定は、また別の記事で。
   <div class="c-article__summary">
      gcloud のアップデートや、インストール $ gcloud components update $ gcloud components install app-engine-go  App Engine デプロイ時にバージョンを指定する
 $ gcloud app deploy --version &lt;version-name&gt; ↓例: devのバージョン名でデプロイする。 $ gcloud app deploy --version dev  
-  </div>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/aws-cli/">今週のメモ　2017-12-27</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2017-12-27T15:44:28&#43;09:00">
-        Dec 27, 2017
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-     AWS cli で処理を待つ（コマンド） 次のようなコマンドで待つことができる。
-# create vpc command with specifying ipv4 cidr # output format : json $ aws ec2 create-vpc --cidr-block 10.0.0.0/16 # view wait help doc $ aws ec2 wait help # wait until vpc is ready $ aws ec2 wait vpc-available --vpc-ids  Linuxでユーザをsudo権限のグループに入れる usermod -aG sudo &lt;username&gt; ( Ubuntu ) usermod -aG wheel &lt;username&gt; ( CentOS )  dateコマンドで「YYYYMMDD」形式で表示する date &quot;+%Y%m%d&quot;  
   </div>
   
 </article>

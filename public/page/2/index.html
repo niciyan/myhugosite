@@ -57,6 +57,26 @@
 
 <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/aws-cli/">今週のメモ　2017-12-27</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2017-12-27T15:44:28&#43;09:00">
+        Dec 27, 2017
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+     AWS cli で処理を待つ（コマンド） 次のようなコマンドで待つことができる。
+# create vpc command with specifying ipv4 cidr # output format : json $ aws ec2 create-vpc --cidr-block 10.0.0.0/16 # view wait help doc $ aws ec2 wait help # wait until vpc is ready $ aws ec2 wait vpc-available --vpc-ids  Linuxでユーザをsudo権限のグループに入れる usermod -aG sudo &lt;username&gt; ( Ubuntu ) usermod -aG wheel &lt;username&gt; ( CentOS )  dateコマンドで「YYYYMMDD」形式で表示する date &quot;+%Y%m%d&quot;  
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://nishiyamasu.xyz/posts/querys-sql/">MYSQLの操作あれこれ</a></h2>
     <p class="c-article__meta">
       Posted on
